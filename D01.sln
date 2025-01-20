@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarpetCleaningService", "Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMethods", "MyMethods\MyMethods.csproj", "{445C6367-41DF-4EC6-93B4-F9D81F498858}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengesDay3", "ChallengesDay3\ChallengesDay3.csproj", "{5DA944CC-8231-4584-8D8C-9A1A7F956E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopSummition", "LoopSummition\LoopSummition.csproj", "{5FF5441B-78D0-4711-B5BB-D15F41FE8AAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{445C6367-41DF-4EC6-93B4-F9D81F498858}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{445C6367-41DF-4EC6-93B4-F9D81F498858}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{445C6367-41DF-4EC6-93B4-F9D81F498858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DA944CC-8231-4584-8D8C-9A1A7F956E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DA944CC-8231-4584-8D8C-9A1A7F956E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DA944CC-8231-4584-8D8C-9A1A7F956E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DA944CC-8231-4584-8D8C-9A1A7F956E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FF5441B-78D0-4711-B5BB-D15F41FE8AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF5441B-78D0-4711-B5BB-D15F41FE8AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF5441B-78D0-4711-B5BB-D15F41FE8AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF5441B-78D0-4711-B5BB-D15F41FE8AAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
