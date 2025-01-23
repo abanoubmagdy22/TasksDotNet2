@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengesDay3", "Challenge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopSummition", "LoopSummition\LoopSummition.csproj", "{5FF5441B-78D0-4711-B5BB-D15F41FE8AAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveTaskDay3", "SolveTaskDay3\SolveTaskDay3.csproj", "{0064AB86-5EB8-4B92-8B85-23DD3FD72B79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{5FF5441B-78D0-4711-B5BB-D15F41FE8AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FF5441B-78D0-4711-B5BB-D15F41FE8AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FF5441B-78D0-4711-B5BB-D15F41FE8AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0064AB86-5EB8-4B92-8B85-23DD3FD72B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0064AB86-5EB8-4B92-8B85-23DD3FD72B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0064AB86-5EB8-4B92-8B85-23DD3FD72B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0064AB86-5EB8-4B92-8B85-23DD3FD72B79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
