@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeDay4", "ChallengeD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateWhiteSpaces", "CalculateWhiteSpaces\CalculateWhiteSpaces.csproj", "{718A1CE1-0F86-4EDE-BDBD-4EA3B8010EF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BounsTaskDay3", "BounsTaskDay3\BounsTaskDay3.csproj", "{4588B92E-9647-4214-81C1-6BCFDCBB30EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{718A1CE1-0F86-4EDE-BDBD-4EA3B8010EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{718A1CE1-0F86-4EDE-BDBD-4EA3B8010EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{718A1CE1-0F86-4EDE-BDBD-4EA3B8010EF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4588B92E-9647-4214-81C1-6BCFDCBB30EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4588B92E-9647-4214-81C1-6BCFDCBB30EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4588B92E-9647-4214-81C1-6BCFDCBB30EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4588B92E-9647-4214-81C1-6BCFDCBB30EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
