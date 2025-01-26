@@ -1,4 +1,7 @@
-﻿namespace SolveTaskDay3
+﻿using System.Collections.Generic;
+using System.Diagnostics.Metrics;
+
+namespace SolveTaskDay3
 {
     internal class Program
     {
@@ -73,7 +76,7 @@
                             numbers.Add(number);
                             Console.ForegroundColor = ConsoleColor.White;
                             Console.WriteLine($"{number} added");
-                           
+
                         }
                         else
                         {
@@ -81,7 +84,6 @@
                             Console.WriteLine("Invalid input, Please enter an integer.");
                         }
                         break;
-
                     case 'M':
                         if (numbers.Count == 0)
                         {
@@ -111,11 +113,12 @@
                         else
                         {
                             int smallest = numbers[0];
-                            foreach (int num in numbers)
+                            //foreach (int num in numbers)
+                            for (int i = 1;i<=numbers.Count;i++)
                             {
-                                if (num < smallest)
+                                if (numbers[i] < smallest)
                                 {
-                                    smallest = num;
+                                    smallest = numbers[i];
                                 }
                             }
                             Console.ForegroundColor = ConsoleColor.White;
@@ -139,6 +142,13 @@
                                     largest = num;
                                 }
                             }
+                            //for (int i = 1; i <= numbers.Count; i++)
+                            //{
+                            //    if (numbers[i] > largest)
+                            //    {
+                            //        largest = numbers[i];
+                            //    }
+                            //}
                             Console.ForegroundColor = ConsoleColor.White;
                             Console.WriteLine($"The largest number in the list is {largest}");
                         }
