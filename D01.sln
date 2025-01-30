@@ -32,6 +32,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BounsTaskDay3", "BounsTaskD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveChallengeDayOop", "SolveChallengeDayOop\SolveChallengeDayOop.csproj", "{6F73954D-D87D-4F48-9FFE-6B582297F4C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveTaskDay5Oop", "SolveTaskDay5Oop\SolveTaskDay5Oop.csproj", "{86D75CCD-E17F-4FB1-BAAB-9AB2EF332DD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveChallengeInheritance", "SolveChallengeInheritance\SolveChallengeInheritance.csproj", "{D0A65CFD-CC8D-42E4-9074-A9B9B92970B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +90,14 @@ Global
 		{6F73954D-D87D-4F48-9FFE-6B582297F4C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F73954D-D87D-4F48-9FFE-6B582297F4C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F73954D-D87D-4F48-9FFE-6B582297F4C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86D75CCD-E17F-4FB1-BAAB-9AB2EF332DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D75CCD-E17F-4FB1-BAAB-9AB2EF332DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86D75CCD-E17F-4FB1-BAAB-9AB2EF332DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86D75CCD-E17F-4FB1-BAAB-9AB2EF332DD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0A65CFD-CC8D-42E4-9074-A9B9B92970B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0A65CFD-CC8D-42E4-9074-A9B9B92970B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0A65CFD-CC8D-42E4-9074-A9B9B92970B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0A65CFD-CC8D-42E4-9074-A9B9B92970B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
