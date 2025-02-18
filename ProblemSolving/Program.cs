@@ -1,4 +1,6 @@
-﻿namespace ProblemSolving
+﻿using System.Linq;
+
+namespace ProblemSolving
 {
 
     public class Program
@@ -17,34 +19,25 @@
         }
         #endregion
 
-        public static void Main()
+        public static T GetFirstElement<T>(T[] array)
         {
-            double[] numbers = { 3.5, 1.2, 7.8, 9.1, 2.3, 8.4 };
-            double[] result = FindMinMax(numbers);
-            Console.WriteLine("First Program");
-            Console.WriteLine($"Min: {result[0]}, Max: {result[1]}");
-            Console.WriteLine("================================");
-
-
-            Testpaper paper1 = new Testpaper("Maths", new string[] { "1A", "2C", "3D", "4A", "5A" }, "60%");
-            Testpaper paper2 = new Testpaper("Chemistry", new string[] { "1C", "2C", "3D", "4A" }, "75%");
-            Testpaper paper3 = new Testpaper("Computing", new string[] { "1D", "2C", "3C", "4B", "5D", "6C", "7A" }, "75%");
-
-            Student student1 = new Student();
-            Student student2 = new Student();
-
-            Console.WriteLine(string.Join(", ", student1.TestsTaken)); 
-
-            student1.TakeTest(paper1, new string[] { "1A", "2D", "3D", "4A", "5A" });
-            Console.WriteLine(string.Join(", ", student1.TestsTaken)); 
-
-            student2.TakeTest(paper2, new string[] { "1C", "2D", "3A", "4C" });
-            student2.TakeTest(paper3, new string[] { "1A", "2C", "3A", "4C", "5D", "6C", "7B" });
-            Console.WriteLine(string.Join(", ", student2.TestsTaken)); 
-
-
+            if(array == null || array.Length == 0)
+            {
+                throw new ArgumentException("Array cannot be null or empty.");
+            }
+            return array[0];
         }
-
+        public static (int min, int max, int diff) DiffMinMax(int[] arraydiff)
+        {
+             if (arraydiff == null || arraydiff.Length == 0)
+            {
+                throw new ArgumentException("Array cannot be null or empty.");
+            }
+            int arraymin = arraydiff.Min();
+            int arraymax = arraydiff.Max();
+            int arraydiffMinMax = arraymax - arraymin;
+            return (arraymin,arraymax,arraydiffMinMax);
+        }
 
 
         public interface ITestpaper
@@ -102,6 +95,52 @@
                 testsTaken.Add($"{paper.Subject}: {result} ({scorePercentage:F0}%)");
             }
         }
+        public static void Main()
+        {
+            double[] numbers = { 3.5, 1.2, 7.8, 9.1, 2.3, 8.4 };
+            double[] result = FindMinMax(numbers);
+            Console.WriteLine("First Program");
+            Console.WriteLine($"Min: {result[0]}, Max: {result[1]}");
+            Console.WriteLine("================================");
+            Console.WriteLine("Second Program");
+            int[] numbers2 = { 1, 2, 3, 4, 5, 6 };
+            Console.WriteLine(GetFirstElement(numbers2));
+            string[] words = { "apple", "banana", "cherry"};
+            Console.WriteLine(GetFirstElement(words));
+            Console.WriteLine("================================");
+            Console.WriteLine("================================");
+            int[] arrayNumbers = { 10, 2, 30, 44, 15, 16 };
+            Console.WriteLine(DiffMinMax(arrayNumbers));
+            Console.WriteLine($"Min:{DiffMinMax(arrayNumbers).min}");
+            Console.WriteLine($"Max: { DiffMinMax(arrayNumbers).max}");
+            Console.WriteLine($"Diff:{DiffMinMax(arrayNumbers).diff}");
+            Console.WriteLine("================================");
+            Console.WriteLine("================================");
+            Console.WriteLine("================================");
+
+            Console.WriteLine("Third Program");
+            Testpaper paper1 = new Testpaper("Maths", new string[] { "1A", "2C", "3D", "4A", "5A" }, "60%");
+            Testpaper paper2 = new Testpaper("Chemistry", new string[] { "1C", "2C", "3D", "4A" }, "75%");
+            Testpaper paper3 = new Testpaper("Computing", new string[] { "1D", "2C", "3C", "4B", "5D", "6C", "7A" }, "75%");
+
+            Student student1 = new Student();
+            Student student2 = new Student();
+
+            Console.WriteLine(string.Join(", ", student1.TestsTaken)); 
+
+            student1.TakeTest(paper1, new string[] { "1A", "2D", "3D", "4A", "5A" });
+            Console.WriteLine(string.Join(", ", student1.TestsTaken)); 
+
+            student2.TakeTest(paper2, new string[] { "1C", "2D", "3A", "4C" });
+            student2.TakeTest(paper3, new string[] { "1A", "2C", "3A", "4C", "5D", "6C", "7B" });
+            Console.WriteLine(string.Join(", ", student2.TestsTaken)); 
+
+
+        }
+
+
+
+
 
 
     }
