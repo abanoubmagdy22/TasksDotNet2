@@ -27,6 +27,14 @@ namespace ProblemSolving
             }
             return array[0];
         }
+        public static T GetLastElement<T>(T[] array)
+        {
+            if(array == null || array.Length == 0)
+            {
+                throw new ArgumentException("Array cannot be null or empty.");
+            }
+            return array[array.Length - 1]; ;
+        }
         public static (int min, int max, int diff) DiffMinMax(int[] arraydiff)
         {
              if (arraydiff == null || arraydiff.Length == 0)
@@ -104,9 +112,11 @@ namespace ProblemSolving
             Console.WriteLine("================================");
             Console.WriteLine("Second Program");
             int[] numbers2 = { 1, 2, 3, 4, 5, 6 };
-            Console.WriteLine(GetFirstElement(numbers2));
+            Console.WriteLine($"first element is: {GetFirstElement(numbers2)}");
+            Console.WriteLine($"Last element is: {GetLastElement(numbers2)}");
             string[] words = { "apple", "banana", "cherry"};
-            Console.WriteLine(GetFirstElement(words));
+            Console.WriteLine($"first element in array is:{GetFirstElement(words)}");
+            Console.WriteLine($"Last element in array is:{GetLastElement(words)}");
             Console.WriteLine("================================");
             Console.WriteLine("================================");
             int[] arrayNumbers = { 10, 2, 30, 44, 15, 16 };
@@ -116,8 +126,6 @@ namespace ProblemSolving
             Console.WriteLine($"Diff:{DiffMinMax(arrayNumbers).diff}");
             Console.WriteLine("================================");
             Console.WriteLine("================================");
-            Console.WriteLine("================================");
-
             Console.WriteLine("Third Program");
             Testpaper paper1 = new Testpaper("Maths", new string[] { "1A", "2C", "3D", "4A", "5A" }, "60%");
             Testpaper paper2 = new Testpaper("Chemistry", new string[] { "1C", "2C", "3D", "4A" }, "75%");
